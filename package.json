@@ -1,0 +1,54 @@
+{
+  "name": "veteran-gruvbox",
+  "displayName": "Veteran Gruvbox",
+  "description": "A Gruvbox theme with bold contrast and clear visual separation, built for experienced developers who value clarity.",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "lint": "node scripts/lint.js",
+    "generate-schema": "node scripts/generate-schema.js",
+    "package": "vsce package -o ./dist/veteran-gruvbox.vsix",
+    "vscode:prepublish": "npm run build",
+    "vsce-publish": "vsce publish"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vipseixas/oldmans-gruvbox-theme.git"
+  },
+  "publisher": "vinisxs",
+  "maintainers": [
+    "Vinicius Seixas"
+  ],
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "gruvbox",
+    "dark",
+    "theme",
+    "color-theme",
+    "veteran",
+    "high-contrast"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Veteran Gruvbox Dark Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/veteran-gruvbox-dark.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "ajv": "^8.20.0",
+    "jsonnet": "^0.5.0-beta",
+    "vsce": "^2.15.0"
+  },
+  "__metadata": {
+    "size": 83912
+  }
+}
